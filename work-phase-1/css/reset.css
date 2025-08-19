@@ -1,0 +1,48 @@
+/* CSS Reset File */
+
+/* 1. Box sizing and margin/padding reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+    padding: 1rem; /* Default padding */
+    margin:0;
+}
+
+/* 2.1 Default / mobile first */
+p{
+    font-family: Arial, sans-serif; /* Default font family */
+    font-size: 12px; /* Default font size */
+    line-height: 2;
+    color: #333333; /* Default text color */
+    }
+
+/* 2.2 Larger screens (e.g., tablets or desktops) for responsiveness */
+@media (min-width: 768px) {
+    p {
+    font-size: 18px;
+    }
+}
+
+/* 2.2 Larger screens (e.g., tablets or desktops) */
+    
+
+
+
+/* 3. Headings reset. Set consistent font sizes for headings */
+h1 {
+    font-size: 2.5rem;
+} 
+h2 {
+    font-size: 2rem;
+}
+h3 { 
+    font-size: 1rem;
+    padding-left: 0;
+    
+}
+span{
+    margin-right: 0.8rem;
+} 
+
+

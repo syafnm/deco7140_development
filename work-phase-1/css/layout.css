@@ -1,0 +1,12 @@
+.container{
+    min-height: 100vh; /*To make the content always fit in the container*/
+    width: 80vw;
+    margin: 0 auto; /*Auto center*/
+    background-color: lightgreen;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 60vw; /* Adjust width for larger screens */
+    }
+}

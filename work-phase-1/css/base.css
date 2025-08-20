@@ -1,0 +1,44 @@
+/* ===============================
+Global Color Variables
+   =============================== */
+:root {
+    /* Brand colors */
+    --color-primary: #999AC6;   /* Highlights, Heading 1 */
+    --color-secondary: #0B3954; /* Secondary highlight, Headings 4 & 5 */
+
+    /* UI colors */
+    --color-light: #FFF9EC;     /* Card background */
+    --color-dark: #798071;      /* Subdued elements */
+    --color-bright: #FF5A5F;    /* Buttons, warning text */
+
+    /* Background */
+    --color-background: #FCFAFA; /* Page background */
+}
+
+/* ===============================
+Example Usage
+   =============================== */
+
+/* Apply the page background */
+body {
+    background-color: var(--color-background);
+    color: var(--color-dark); /* default text color */
+    /* Google font setup */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+
+
+/* Headings */
+h1 {
+color: var(--color-primary);
+}
+
+h4, h5 {
+color: var(--color-secondary);
+}
+
+/* Cards */
+
+

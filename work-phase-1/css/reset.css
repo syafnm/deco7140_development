@@ -23,12 +23,6 @@ p{
     font-size: 18px;
     }
 }
-
-/* 2.2 Larger screens (e.g., tablets or desktops) */
-    
-
-
-
 /* 3. Headings reset. Set consistent font sizes for headings */
 h1 {
     font-size: 2.5rem;
@@ -38,11 +32,15 @@ h2 {
 }
 h3 { 
     font-size: 1rem;
-    padding-left: 0;
-    
 }
-span{
-    margin-right: 0.8rem;
-} 
+
+/* 4. Sections */
+.links {
+    display: block; /* Display to make it left justified */
+    padding-left: 0;
+    margin: 0;
+    font-weight: bold; /* Make links bold */
+}
+
 
 

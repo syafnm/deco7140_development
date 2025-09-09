@@ -1,0 +1,229 @@
+/* reset.css
+   A thorough CSS reset + animation reset.
+   - Put this at the very top of your stylesheet import order.
+   - Edit cautiously; it's intended as a blank slate for design.
+*/
+
+/* ============================
+   Box model + universal reset
+   ============================ */
+:root {
+  /* You can define design tokens here later if desired */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box; /* predictable sizing */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================
+   Remove default animations/transitions
+   ============================ */
+/* Disable animations/transitions by default so you start from "static" baseline.
+   We add !important to ensure third-party UA/user-agent styles don't override this reset.
+*/
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  caret-color: auto; /* leave caret default unless you want to override */
+}
+
+/* But respect user preference for reduced motion: if user asked for reduced motion,
+   keep the same behavior (no animations). If they *didn't* ask, you can remove the
+   global removal above later when you add your component animations.
+*/
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================
+   HTML / BODY basics
+   ============================ */
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.4; /* sensible default for body text */
+  font-size: 16px;  /* set a comfortable default; override in your design */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: inherit;   /* let page decide text color */
+  background: transparent; /* let page body set background */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ============================
+   Structural elements
+   ============================ */
+main, header, nav, section, article, aside, figure {
+  display: block;
+}
+
+/* Remove default list styling and indents */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings: remove margins but keep semantic sizes as baseline */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+/* Paragraphs - neutral baseline */
+p {
+  margin: 0;
+}
+
+/* Links - remove default color/decoration; you'll add styles in your theme */
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Images, videos, canvas, svg - responsive baseline */
+img, picture, video, canvas, svg {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Tables - remove spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Forms - neutral and inherit fonts */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Buttons: keep cursor pointer and disable default background */
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+footer {
+  display: block;
+  width: 100%; 
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+/* Keep inputs accessible - don't remove focus styles globally.
+   Use :focus-visible to style keyboard focus intentionally. */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid Highlight; /* you can override this in theme for better contrast */
+  outline-offset: 2px;
+}
+
+/* Remove native number input spinners (Chrome/Edge/Firefox) if you prefer */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Placeholder styling neutral */
+::placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+/* Disabled state baseline */
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* SVG focus outline neutral */
+svg:focus {
+  outline: none;
+}
+
+/* ============================
+   Utility / layout helpers (optional)
+   ============================ */
+/* Full-bleed reset for images/videos inside figures */
+figure {
+  margin: 0;
+}
+
+/* Visually hidden — accessible utility */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Utility to re-enable transitions/animations for a subtree if you want:
+   Use .with-animations on a container to allow animations inside it. */
+.with-animations * {
+  transition: initial !important;
+  animation: initial !important;
+}
+
+/* ============================
+   Optional: sane defaults for scroll-behavior
+   ============================ */
+/* Keep smooth scrolling disabled when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+/* ============================
+   Notes / Guidance (keep in this file as comments)
+   ============================
+ - This reset intentionally removes most browser styling and disables animations
+   so you can design from a blank slate. When you implement component styles,
+   re-enable or add transitions/animations thoughtfully (use .with-animations or
+   override properties at component level).
+ - Accessibility: the reset does NOT remove focus-visible outlines for keyboard users;
+   style focus-visible intentionally in your theme for contrast and visibility.
+ - If you prefer not to globally disable animations (so third-party widgets keep their
+   effects), remove the "animation: none !important" and "transition: none !important"
+   lines and instead disable animations on a case-by-case basis.
+ - Always test with `prefers-reduced-motion` and keyboard navigation after adding animations.
+*/

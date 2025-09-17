@@ -1,0 +1,92 @@
+/* Hero text component */
+
+/* Mobile */
+.hero-text {
+    text-align: center;
+    font-size: 1.2rem; 
+    font-weight: 500;
+    color: var(--text-color);     
+}                                                
+
+/* MENUS */
+
+/* Base styles */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+#nav-mobile ul li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#nav-desktop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+    }
+
+#nav-desktop ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
+/* Micro interaction on hover */
+@media (hover: hover) {
+    #nav-desktop ul li a:hover {
+    background-color: var(--dark-secondary-color);
+    transform: scale(1.00); /* to prevent it from moving around */
+    text-align: center;
+    }
+}
+
+
+/* Responsive control*/
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 1.75rem;
+        text-align: left;
+    }
+    
+    #nav-desktop {
+        display: block;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    #nav-desktop {
+    display: none;
+    }
+}
+
+
+
+
+

@@ -8,5 +8,6 @@
 @media (min-width: 768px) {
     .container {
         width: 60vw; /* Adjust width for larger screens */
+        margin: 0 auto;
     }
 }

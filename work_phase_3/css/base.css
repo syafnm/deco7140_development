@@ -9,9 +9,20 @@
         "wdth" 100;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
 /* Typography (Using Golden Ratio) */
 h1 {
     font-size: 4.2rem; /* 2.6 x 1.618 rounded */
+    text-decoration: none;
     color: var(--text-color);
 }
 h3 {

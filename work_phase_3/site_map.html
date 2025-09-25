@@ -14,27 +14,91 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/component_modules/accordion.css" />
 
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
         <title>Work Phase 3</title>
+
+        <script type="module" src="js/site_map.js"></script>
     </head>
     <body>
         <!-- START PAGE STRUCTURE -->
         <nav id="nav-mobile" aria-label="Main Navigation">
-
+            <ul>
+                <li><a href="index.html"><span class="icon">🏠</span></a></li>
+                <li><a href="site_map.html" aria-current="page"><span class="icon">🧭</span></a></li>
+                <li><a href="style_guide.html"><span class="icon">🎨</span></a></li>
+                <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+                <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
+            </ul>
         </nav>
 
-        <nav id="nav-desktop" aria-label="Main Navigation">
-            
+        <nav id="nav-desktop" aria-label="Main Navigation" >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html" aria-current="page">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethical Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI & MT Acknowledgement</a></li>
+            </ul>
         </nav>
 
         <main>
             <div class="container">
-                <h1>Site Map</h1>
+                <h1 class="m-b-3">Site Map</h1>
+                <p class="m-b-3">
+                    This site map provides an overview of the structure and
+                    organization of the website, helping users navigate through
+                    its various sections and pages.
+                </p>
+                <img src="assets/site_map.jpg" alt="Card sort site map" class="responsive-img">
+                <p>
+                    The site map is organized into several main sections, each
+                    representing a key area of the website. These sections are
+                    designed to provide users with easy access to relevant
+                    information and resources.
+                </p>
+
+                <section class="m-y-2">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button class="accordion-header m-y-3">▷Inspiration</button>
+                        <div class="accordion-content">
+                            <p class="m-y-3">
+                                Central hub for users to see and share inspiring content. 
+                                Supports the client's goal of empowering users with knowledge 
+                                and User story 'As a ...'. Note: this should be your content! 
+                                These are your annotations (see L08 for details).
+                            </p>
+
+                            <div class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header m-y-3">▷Inspiration</button>
+                                    <div class="accordion-content">
+                                        <p class="m-y-3">
+                                            Central hub for users to see and share inspiring content. 
+                                            Supports the client's goal of empowering users with knowledge 
+                                            and User story 'As a ...'. Note: this should be your content! 
+                                            These are your annotations (see L08 for details).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </section>
+
             </div>
+
+            
         </main>
         <!-- END PAGE STRUCTURE -->
+
+        <!-- JavaScript Linking -->
+        
     </body>
     <footer>© 2025 Syaf. All rights reserved.</footer>
 </html>

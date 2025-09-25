@@ -1,5 +1,6 @@
-/* Hero text component */
+@import '../component_skeletons/accordion.css';                              
 
+/* Hero text component */
 /* Mobile */
 .hero-text {
     text-align: center;
@@ -33,6 +34,7 @@ nav ul {
     padding: 1rem 0;
     font-size: 1.5rem;
     text-decoration: none;
+    justify-content: space-around;
 }
 
 #nav-desktop {
@@ -86,6 +88,13 @@ nav ul {
     }
 }
 
+/* Image */
+.responsive-img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+}
 
 
 

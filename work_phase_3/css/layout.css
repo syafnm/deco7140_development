@@ -1,8 +1,17 @@
 /* PAGE CONTAINER */
 /* Mobile */
 .container {
-    min-height: 100vh;
-    width: 90vw;
-    margin: 0 auto;
+    min-height: 100vh; /*To make the content always fit in the container*/
+    width: 80vw;
+    margin: 0 auto; /*Auto center*/
     background-color: var(--background-color);
 }               
+
+/* Desktop */
+@media (min-width: 768px) {
+    .container {
+        width: 80vw;
+        margin: 0 auto;
+        background-color: var(--background-color);
+    }  
+}

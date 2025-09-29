@@ -1,0 +1,48 @@
+.viewer {
+    display: flex;
+    align-items: center;       /* vertical centering */
+    flex-direction: column;    /* stack image and caption vertically */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%; /* or any width you prefer */
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    overflow-y: auto;
+
+}
+
+.viewer.open {
+    transform: translateX(0);
+}
+
+#viewer img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+#close-viewer {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
+
+#viewer-caption {
+    padding: 5vh 5vw;
+}                        
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    #viewer {
+        width: 50%;
+    }
+}

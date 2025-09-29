@@ -25,6 +25,10 @@ h1 {
     text-decoration: none;
     color: var(--text-color);
 }
+h2 {
+    font-size: 3.2rem; /* 2 x 1.618 rounded */
+    color: var(--text-color);
+}
 h3 {
     font-size: 2.5rem; /* 2.6 x 1.618 rounded */
     color: var(--text-color);

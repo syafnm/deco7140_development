@@ -1,0 +1,21 @@
+@import url("../../component_skeletons/gallery.css");
+
+@import url("../../component_skeletons/viewer.css");
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}   
+
+.gallery img {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}                    

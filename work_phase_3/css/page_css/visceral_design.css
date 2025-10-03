@@ -18,6 +18,7 @@
     position: relative;
     cursor: pointer;
     border-radius: 8px;
+    z-index: 0;
 }                    
 
 .typography-container {

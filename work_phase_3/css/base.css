@@ -58,12 +58,12 @@ label {
 /* Color Scheme */
 :root {
     /* Color Variables */
-    --primary-color: #b59e52;
-    --light-primary-color: #ece7d4;
-    --secondary-color: #526ab5;
-    --dark-secondary-color: #405494;
-    --background-color: #f9f9fb;
-    --text-color: #222;
+    --primary-color: #000029;
+    --light-primary-color: #E4E4EE;
+    --secondary-color: #E28413;
+    --dark-secondary-color: #8A510C;
+    --background-color: #FBF5F3;
+    --text-color: #2D2C2B;
     --light-text-color: #f2f2f2;
 
     /* Spacing Variables */

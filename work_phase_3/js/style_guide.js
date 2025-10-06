@@ -26,10 +26,25 @@ import { initAccordion } from './modules/accordion.js';
 * EVENT LISTENERS
 * The code that runs when a user interacts with the page
 * */
-document.addEventListener("DOMContentLoaded", () => {
-    console.log('DOM fully loaded and parsed');
-    initAccordion('.accordion');
+document.addEventListener("DOMContentLoaded", function() {
+
+    const visceralButton = document.getElementById('learnVisceral');
+    visceralButton.addEventListener('click', function() {
+        window.location.href = "visceral_design.html";
+    });
+
+    const behaviouralButton = document.getElementById('learnBehavioral');
+    behaviouralButton.addEventListener('click', function() {
+        window.location.href = "behavioral_design.html";
+    });
+
+    const reflectiveButton = document.getElementById('learnReflective');
+    reflectiveButton.addEventListener('click', function() {
+        window.location.href = "reflective_design.html";
+    });
 });
+
+
 
 
 // when the page fully loads

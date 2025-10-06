@@ -2,8 +2,7 @@
 * IMPORTS
 * Keep track of external modules being used
 * */
-import { initAccordion } from './modules/accordion.js'; 
-
+import { postFormData } from './postFormData.js';
 
 /**
 * CONSTANTS
@@ -26,10 +25,29 @@ import { initAccordion } from './modules/accordion.js';
 * EVENT LISTENERS
 * The code that runs when a user interacts with the page
 * */
-document.addEventListener("DOMContentLoaded", () => {
-    console.log('DOM fully loaded and parsed');
-    initAccordion('.accordion');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('community-form');
+    const feedback = document.getElementById('form-feedback');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const { success, data, error } = await postFormData(form, 'https://cloudapi.gps-1.uqcloud.net', {
+        'student_number': 's4951046',
+        'uqcloud_zone_id': 'deco7140-2870afbe.zones.eait.uq.edu.au/'
+        });
+
+        if (success) {
+        feedback.textContent = data.message || 'Form submitted successfully!';
+        form.reset();
+        } else {
+        feedback.textContent = error || data.message || 'Something went wrong. Please try again.';
+        }
+    });
 });
+
+
 
 
 // when the page fully loads

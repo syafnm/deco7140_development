@@ -78,20 +78,102 @@
                         <li>></li>
                         <li><a href="style_guide.html">Style Guide</a></li>
                         <li>></li>
-                        <li><a href="visceral_design.html" aria-current="page">Behavioural Design</a></li>
+                        <li><a href="behavioral_design.html" aria-current="page">Behavioral Design</a></li>
                     </ol>
                 </nav>
 
-                <h1 class="m-y-3">Behavioural Guide</h1>
+                <h1 class="m-y-3">Behavioral Guide</h1>
                 <p class="m-y-3">
-                    The visceral design of this style guide highlights the emotional 
-                    and aesthetic impact of the proposed website through its wireframes, 
-                    typography, and color scheme. The wireframes showcase a clean, intuitive 
-                    layout that guides user attention naturally. Typography is chosen for 
-                    clarity and personality, balancing readability with visual charm. The 
-                    color scheme evokes a consistent mood, using harmonious tones to create 
-                    a welcoming and engaging experience from the first glance.
+                    This section outlines the principles and guidelines for designing user interactions 
+                    that effectively influence user behavior in a positive manner. The goal is to create 
+                    an engaging and intuitive experience that encourages desired actions while respecting 
+                    user autonomy.
                 </p>
+
+                <section class="m-y-3">
+                    <h3>Links</h3>
+                    <p>
+                        Links are styled to be easily identifiable and accessible. 
+                    </p>
+                    <img class="img-general" src="assets/links.png" alt="Example of link styles">
+                </section>
+
+                <section class="m-y-3">
+                    <h3>Menu and Navigation</h3>
+                    <p>
+                        The navigation menu is designed to be simple and intuitive, allowing users to easily 
+                        find and access different sections of the website.
+                    </p>
+                    <img style="width: 100%;" src="assets/navigation.png" alt="Example of navigation menu">
+                </section>
+
+                <section>
+                    <h3>Card Component</h3>
+                    <p>
+                        Cards are used to present information in a concise and visually appealing manner. 
+                        They are designed to be interactive, encouraging users to click for more details. 
+                    </p>
+                    <img class="img-general" src="assets/cards.png" alt="Example of card components">
+                </section>
+
+                <section class="m-y-3">
+                    <h3>Buttons</h3>
+                    <p class="m-b-3">
+                        Buttons are designed to be easily recognizable and actionable. Different styles 
+                        are used to indicate primary actions, secondary actions, and disabled states.
+                    </p>
+
+                    <!-- Call to action Buttons -->
+                    <button class="btn">Submit</button>
+                    <button class="btn-secondary">Submit</button>
+                    <p class="m-b-3">
+                        This is an example of Call-to-action button. I put primary button that has solid color,
+                        and secondari button that is transparent and only has outline.
+                        It has clear label to support clarity. 
+                    </p>
+
+                    <!-- Disabled Button -->
+                    <button class="btn" disabled>Disabled</button> 
+                    <p class="m-b-3">
+                        This is an example of button that is disabled. Users wont be able to click into it.
+                        I also set the cursor to be not-allowed when hovering over the button.
+                    </p>
+
+                    <!-- Icon-only Accessible Button -->
+                    <button class="btn icon-only" aria-label="Home">
+                        🏠
+                    </button>
+                    <p class="m-b-3">
+                        This is an example of icon-only button that is accessible for people with reading difficulties
+                    </p>
+                </section>
+
+                <section class="m-y-3">
+                    <h3>Forms and Input Fields</h3>
+                    <p>
+                        Forms are designed to be user-friendly, with clear labels and instructions. 
+                        Validation messages are provided to guide users in correcting errors.
+                    </p>
+                    
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="full_name" required> <br>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required> <br>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea> <br>
+
+                        <label for="photo">Upload Photo</label>
+                        <input type="file" id="photo" name="photo"> <br>
+
+                        <button class="btn">Join the Community</button>
+                    </form>
+
+                        <p id="form-feedback" role="alert"></p>
+
+                </section>
 
             </div>
         </main>

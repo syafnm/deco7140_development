@@ -29,3 +29,17 @@
     margin: 1rem;
     width: auto;
 }
+
+.card-color-scheme {
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    outline: 1px solid gray;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}

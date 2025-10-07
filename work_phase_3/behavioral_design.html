@@ -28,10 +28,10 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-        <link rel="stylesheet" href="css/page_css/visceral_design.css" />
+        <link rel="stylesheet" href="css/page_css/behavioural_design.css" />
         <link rel="stylesheet" href="css/component_skeletons/gallery.css"/>
-        <link rel="stylesheet" href="css/component_skeletons/viewer.css"/>
         <link rel="stylesheet" href="css/component_skeletons/card.css"/>
+        <link rel="stylesheet" href="css/component_skeletons/accordion.css"/>
 
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
@@ -45,6 +45,8 @@
         <title>Behavioural Guide</title>
 
         <script type="module" src="js/behavioural_design.js"></script>
+
+
 
     </head>
     <body>
@@ -91,6 +93,86 @@
                 </p>
 
                 <section class="m-y-3">
+                    <h3 class="m-t-3">Website's Identity and Tone</h3>
+                    <p class="m-b-1">
+                        Our website is built to be a reliable and connected space for 
+                        international students. We understand that students seek trustworthy information 
+                        to navigate their journey abroad, as well as a welcoming platform to connect with 
+                        global peers. By combining official articles with community-driven threads that 
+                        share personal experiences and diverse perspectives, we aim to create a 
+                        semi-formal environment that is both informative and engaging.
+                    </p>
+
+                    <h4 class="m-t-3">Example of Homepage Text</h4>
+                    <section class="card-homepage">
+                        <h4>Welcome to Bulu Space</h4>
+                        <label>Welcome to your trusted space for international student life and connection.</label>
+                        <p>
+                            Whether you're preparing to study abroad or already navigating life in a new country, this platform 
+                            is here to support you every step of the way. You'll find reliable resources from universities, 
+                            immigration offices, and student support services, alongside real stories and advice from fellow 
+                            international students around the world. Our interactive threads offer a space to ask questions, 
+                            share experiences, and build meaningful connections. We believe that informed students make empowered
+                            decisions — and that shared experiences make the journey more meaningful. Start exploring articles, 
+                            join discussions, or connect with others who’ve walked the same path. If you’re new here, check out 
+                            our guides to visas, housing, and cultural adaptation. Let’s make your international journey smoother, 
+                            together.
+                        </p>
+                    </section>
+
+                    <h4 class="m-t-3">Example of Homepage Imagery</h4>
+                    <section>
+                        <ul>
+                            <li>
+                                1. Hero Image: The Discussion of Multiracial Students
+                            </li>
+                            <li>
+                                <img class="img-general" src="assets/hero.jpg" alt="Hero image of homepage">
+                            </li>
+                        </ul>
+                        <p>
+                            The hero image features a group of diverse students engaged in a lively discussion, 
+                            symbolizing the platform's commitment to connectivity and community. 
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <ul>
+                            <li>
+                                2. Infographic Banner: International Student Journey
+                            </li>
+                            <li>
+                                <img class="img-general" src="assets/journey.jpg" alt="Illustration of international student journey">
+                            </li>
+                        </ul>
+                        <p>
+                            The infographic banner illustrates the various stages of an international 
+                            student's journey, from application to graduation, highlighting the platform's 
+                            role in providing support and resources throughout this process. 
+                        </p>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <li>
+                                3. Community Carousel: International Student Events
+                            </li>
+                            <li>
+                                <img class="img-general" src="assets/community.jpg" alt="Illustration of international student events">
+                            </li>
+                        </ul>
+                        <p>
+                            The community carousel showcases images from various international student 
+                            events, fostering a sense of belonging and encouraging users to participate in 
+                            community activities. It will support connectivity as highlights diversity, 
+                            friendship, and shared joy.
+                        </p>
+                    </section>
+
+                </section>
+
+
+                <section class="m-y-3">
                     <h3>Links</h3>
                     <p>
                         Links are styled to be easily identifiable and accessible. 
@@ -107,7 +189,7 @@
                     <img style="width: 100%;" src="assets/navigation.png" alt="Example of navigation menu">
                 </section>
 
-                <section>
+                <section class="m-y-3">
                     <h3>Card Component</h3>
                     <p>
                         Cards are used to present information in a concise and visually appealing manner. 
@@ -150,7 +232,7 @@
 
                 <section class="m-y-3">
                     <h3>Forms and Input Fields</h3>
-                    <p>
+                    <p class="m-b-3">
                         Forms are designed to be user-friendly, with clear labels and instructions. 
                         Validation messages are provided to guide users in correcting errors.
                     </p>
@@ -165,16 +247,39 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea> <br>
 
-                        <label for="photo">Upload Photo</label>
-                        <input type="file" id="photo" name="photo"> <br>
-
                         <button class="btn">Join the Community</button>
                     </form>
 
                         <p id="form-feedback" role="alert"></p>
-
                 </section>
 
+                <section class="m-y-2">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button class="accordion-header m-y-3">▷Language</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>- Semi-formal tone balances professionalism (for official articles) with warmth (for community threads).</li>
+                                <li>- Phrases like “trusted space,” “real stories,” and “let’s make your journey smoother, together” build emotional trust while maintaining clarity and credibility.</li>
+                                <li>- Clear calls to action like “Start exploring” and “Check out our guides” encourage interaction without being overly casual.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="m-y-2">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button class="accordion-header m-y-3">▷Imagery</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>- Campus group photo: Builds trust and relatability by showing real students in authentic settings.</li>
+                                <li>- Infographic banner: Reinforces reliability through structured, digestible information.</li>
+                                <li>- Community carousel: Highlights interactivity and inclusiveness, showing students actively engaging.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </body>

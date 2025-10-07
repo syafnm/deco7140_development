@@ -1,4 +1,8 @@
 
+.accordion-header {
+    background-color: var(--primary-color);
+    color: white;
+}
 
 .form-container {
     max-width: 500px;
@@ -45,3 +49,13 @@ form textarea {
     text-align: center;
     color: #d9534f;
 }
+
+.card-homepage {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin: 1rem;
+    width: auto;
+}
+

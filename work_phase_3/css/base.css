@@ -33,6 +33,10 @@ h3 {
     font-size: 2.5rem; /* 2.6 x 1.618 rounded */
     color: var(--text-color);
 }
+h4 {
+    font-size: 2rem; /* 1.6 x 1.618 rounded */
+    color: var(--text-color);
+}
 
 label {
     font-size: 1.2rem;

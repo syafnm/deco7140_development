@@ -3,6 +3,7 @@
 * Keep track of external modules being used
 * */
 import { postFormData } from './postFormData.js';
+import { initAccordion } from './modules/accordion.js'; 
 
 /**
 * CONSTANTS
@@ -27,6 +28,10 @@ import { postFormData } from './postFormData.js';
 * */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    console.log('DOM fully loaded and parsed');
+    initAccordion('.accordion');
+
     const form = document.getElementById('community-form');
     const feedback = document.getElementById('form-feedback');
 
@@ -45,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         feedback.textContent = error || data.message || 'Something went wrong. Please try again.';
         }
     });
-});
 
+});
 
 
 

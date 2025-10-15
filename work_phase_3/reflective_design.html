@@ -232,6 +232,184 @@
                     </div>
                 </section>
 
+                <section class="m-y-2">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button class="accordion-header m-y-3">▷Community List</button>
+                        <div class="accordion-content">
+                            <section id="community-list">
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="m-y-2">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button class="accordion-header m-y-3">▷Accessibility Report</button>
+                        <div class="accordion-content">
+
+                            <section>
+                                <div class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header m-y-3">▷Issue 1: Not use the "fieldset" element to group logically related input elements.</button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            It does not support the user that need screen reader and help 
+                                            them interact with the form more quickly and effectively. 
+                                        </p>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Relevant WCAG</label>
+                                        <ul>
+                                            <li>1.3.1 Info and Relationship</li>
+                                            <li>3.3.2 Labels or Intrustions</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Element Affected</label>
+                                        <ul>
+                                            <li>Form elements</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion nested">
+                                    <div class="accordion-item">
+                                        <button class="accordion-header m-y-3">▷What the impact is on potential users</button>
+                                        <div class="accordion-content">
+                                            <ul>
+                                                <li>- Screen reader users may not understand that certain inputs are part of a group. </li>
+                                                <li>- It can lead to confusion, misinterpretation, or incomplete form submissions. </li>
+                                                <li>- Reduces the overall usability and accessibility of the form. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Fix the issue</label>
+                                        <ul>
+                                            <li>- Use the "fieldset" element to group logically related input elements</li>
+                                            <li>- Provide a descriptive "legend" to explain the purpose of the group. </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header m-y-3">▷Issue 2: Text Contrast</button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Text contrast of 2.49 with its background is less than the WCAG 
+                                            AA minimum requirements for text of size 16px and weight of 700  
+                                        </p>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Relevant WCAG</label>
+                                        <ul>
+                                            <li>1.4.3 Contrast (Minimum) </li>
+                                            <li>1.4.6 Contrast (Enhanced) </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Element Affected</label>
+                                        <ul>
+                                            <li>Any text element (e.g., paragraph, heading, label) 
+                                                that has a contrast ratio of 2.49 against its background.  </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion nested">
+                                    <div class="accordion-item">
+                                        <button class="accordion-header m-y-3">▷What the impact is on potential users</button>
+                                        <div class="accordion-content">
+                                            <ul>
+                                                <li>- Users with low vision, color blindness, or older adults may struggle to read the content. </li>
+                                                <li>- Poor contrast can lead to eye strain, misinterpretation, or missed information. </li>
+                                                <li>- It reduces the overall accessibility and usability of your website. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Fix the issue</label>
+                                        <ul>
+                                            <li>- For large text that is at least 18 point or at least 14 point when bold, 
+                                                adjust the color of the text or its background to give at least a 3 to 1 contrast ratio. </li>
+                                            <li>- For body text that is less than 18 point or less than 14 point when bold, 
+                                                adjust the color of the text or its background to give at least a 4.5 to 1 contrast ratio. </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </section>
+
+                            <section>
+                                <div class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header m-y-3">▷Issue 3: Keyboard focus indicator</button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            It is unclear whether the keyboard focus indicator is visible
+                                            when using CSS declaration for 'border' or 'outline'  
+                                        </p>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Relevant WCAG</label>
+                                        <ul>
+                                            <li>2.4.7 Focus visible  </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Element Affected</label>
+                                        <p>Any interactive element (e.g., buttons, links, form inputs) that: </p>
+                                        <ul>
+                                            <li>- Has custom styles applied using border, outline, or box-shadow. </li>
+                                            <li>- May have had the default focus styles removed or overridden. </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="accordion nested">
+                                    <div class="accordion-item">
+                                        <button class="accordion-header m-y-3">▷What the impact is on potential users</button>
+                                        <div class="accordion-content">
+                                            <ul>
+                                                <li>- Users who navigate using a keyboard (e.g., due to motor disabilities or preference) may not know which element is currently active. </li>
+                                                <li>- This can lead to confusion, navigation errors, or inability to complete tasks on the site. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="accordion-content">
+                                        <label>Fix the issue</label>
+                                        <ul>
+                                            <li>- Use the default focus indicator for the platform. </li>
+                                            <li>- Adjust the CSS styling to make the keyboard focus highly visible. </li>
+                                            <li>- Use interface components that are highlighted by the user agent when they receive focus. </li>
+                                            <li>- Use scripting to change the background color or border of the element to make it visually distinct when it receives focus </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+
             </div>
             
         </main>

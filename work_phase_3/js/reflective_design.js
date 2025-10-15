@@ -3,6 +3,7 @@
 * Keep track of external modules being used
 * */
 import { initAccordion } from './modules/accordion.js'; 
+import { fetchGetData } from './modules/getData.js';
 
 /**
 * CONSTANTS
@@ -30,7 +31,31 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded and parsed');
     initAccordion('.accordion');
 
+    const container = document.getElementById('community-list');
+
+    fetchGetData(' https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community/', {
+        'student_number': 's49510469',
+        'uqcloud_zone_id': 'https://deco7140-2870afbe.uqcloud.net/'
+    }).then(data => {
+        if (!data) {
+        container.innerHTML = '<p class="text-danger">Unable to load community members.</p>';
+        return;
+        }
+
+        data.forEach(member => {
+        const card = document.createElement('div');
+        card.className = 'card mb-3';
+        card.innerHTML = `
+            <div class="card-body">
+            <h5 class="card-title">${member.name}</h5>
+            <p class="card-text">${member.message || 'No message provided.'}</p>
+            </div>
+        `;
+        container.appendChild(card);
+        });
+    });
 });
+
 
 
 // when the page fully loads

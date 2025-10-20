@@ -1,0 +1,124 @@
+/* Typography for body */
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+/* Typography (Using Golden Ratio) */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+h2 {
+    font-size: 2rem; 
+    color: var(--text-color);
+}
+h3 {
+    font-size: 1.5rem; 
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--text-color)
+    
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+caption {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Mobile */
+.page-title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .page-title {
+        text-align: left;
+        font-size: 3rem; /* Larger font for desktop */
+    }
+}
+
+
+/* Color Scheme */
+:root {
+    /* Color Variables */
+    --primary-color: #000029;
+    --light-primary-color: #E4E4EE;
+    --secondary-color: #E28413;
+    --dark-secondary-color: #8A510C;
+    --light-secondary-color: #edcba2;
+    --background-color: #FBF5F3;
+    --text-color: #2D2C2B;
+    --light-text-color: #f2f2f2;
+
+    /* Spacing Variables */
+    --space-0: 0;
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 3rem;
+
+
+    /* Margin */
+    .m-1 { margin: var(--space-1); }
+    .m-2 { margin: var(--space-2); }
+    .m-3 { margin: var(--space-3); }
+    .m-4 { margin: var(--space-4); }
+
+    .m-t-1 { margin-top: var(--space-1); }
+    .m-t-3 { margin-top: var(--space-3); }
+    .m-b-1 { margin-bottom: var(--space-1); }
+    .m-b-3 { margin-bottom: var(--space-3); }
+    .m-s-1 { margin-inline-start: var(--space-1); }
+    .m-e-1 { margin-inline-end: var(--space-1); }
+    .m-x-1 { margin-inline: var(--space-1); }
+    .m-y-1 { margin-block: var(--space-1); }
+    .m-y-2 { margin-block: var(--space-2);}
+    .m-y-3 { margin-block: var(--space-3); }
+    .m-y-4 { margin-block: var(--space-4);}
+
+    /* Padding */
+    .p-1 { padding: var(--space-1); }
+    .p-2 { padding: var(--space-2); }
+    .p-3 { padding: var(--space-3); }
+    .p-4 { padding: var(--space-4); }
+
+    .p-t-1 { padding-top: var(--space-1); }
+    .p-b-1 { padding-bottom: var(--space-1); }
+    .p-s-1 { padding-inline-start: var(--space-1); }
+    .p-e-1 { padding-inline-end: var(--space-1); }
+    .p-x-1 { padding-inline: var(--space-1); }
+    .p-x-3 { padding-inline: var(--space-3); }
+    .p-y-1 { padding-block: var(--space-1); }
+}
+
+

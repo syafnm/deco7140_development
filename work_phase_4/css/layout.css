@@ -5,6 +5,7 @@
     margin: 0 auto; /*Auto center*/
     background-color: var(--background-color);
     text-align: center;
+    padding-bottom: 64px;
 }          
 
 .nav-container {

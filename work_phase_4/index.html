@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/work_phase_4/css/base.css" />
         <link rel="stylesheet" href="/work_phase_4/css/components.css" />
         <link rel="stylesheet" href="/work_phase_4/css/layout.css" />
+        <link rel="stylesheet" href="/work_phase_4/css/page_css/index.css" />
 
         <!--Font Linking-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +20,9 @@
 
         <!-- Ico Linking -->
         <link rel="icon" href="./assets/favicon.ico" />
+
+        <!-- JS Linking -->
+        <script type="module" src="js/index.js"></script>
 
         <title>Work Phase 4</title>
 
@@ -79,6 +83,25 @@
                 a similar path. If you're new here, check out our guides to visas, housing, and cultural adaptation. 
                 Let’s make your international journey smoother, together.
             </p>
+
+            <section class="signup-container">
+                <h2 style="color: var(--light-text-color)">Ready to get the full experience?</h2>
+                <p style="color: var(--light-text-color)">
+                    Sign up now to unlock personalized features, connect with fellow international students, 
+                    and access exclusive resources tailored just for you!
+                </p>
+
+                <form id="profile-form">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <p id="form-feedback"></p>
+
+
+            </section>
+
         </div>
         
         <footer class="footer">
@@ -87,8 +110,7 @@
                     <img src="assets/images/logo.png" alt="company-logo">
                 </div>
                 <div>
-                    <h3>UNIVERSE SPACE</h3>
-                    <caption>© 2025 Syafira Nurilhaq. All rights reserved.</caption>
+                    <p><small style="color: var(--light-text-color)">© 2025 Syafira Nurilhaq. All rights reserved.</small>
                 </div>
             </div>
 

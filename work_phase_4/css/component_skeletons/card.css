@@ -1,0 +1,67 @@
+
+/* Articles Grid */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* Community Cards */
+.community-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.community-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.avatar-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-text {
+    margin-bottom: 12px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 16px;
+    font-size: 0.9;
+}

@@ -31,9 +31,9 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
-    color: var(--text-color)
-    
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
 p {
@@ -47,10 +47,11 @@ label {
     font-weight: bold;
 }
 
-caption {
+p small {
     font-size: 0.75rem;
     color: var(--text-color);
     line-height: 1.6;
+    font-style: italic;
 }
 
 /* Mobile */
@@ -72,7 +73,7 @@ caption {
 :root {
     /* Color Variables */
     --primary-color: #000029;
-    --light-primary-color: #E4E4EE;
+    --light-primary-color: #bed0ff;
     --secondary-color: #E28413;
     --dark-secondary-color: #8A510C;
     --light-secondary-color: #edcba2;

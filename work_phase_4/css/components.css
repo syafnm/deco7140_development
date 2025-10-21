@@ -176,7 +176,39 @@
 }
 
 
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
 
+.tags span {
+    display: inline-block;
+    background-color: var(--light-text-color);
+    padding: 4px 8px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+#tags-community {
+    display: inline-block;
+    background-color: var(--light-secondary-color);
+    padding: 4px 8px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+#tags-official {
+    display: inline-block;
+    background-color: var(--light-primary-color);
+    padding: 4px 8px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
 
 
 /* Image */

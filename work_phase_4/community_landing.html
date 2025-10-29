@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/work_phase_4/css/reset.css" />
         <link rel="stylesheet" href="/work_phase_4/css/base.css" />
         <link rel="stylesheet" href="/work_phase_4/css/components.css" />
+        <link rel="stylesheet" href="/work_phase_4/css/component_skeletons/card.css" />
         <link rel="stylesheet" href="/work_phase_4/css/layout.css" />
         <link rel="stylesheet" href="/work_phase_4/css/page_css/community_landing.css" />
 
@@ -24,6 +25,7 @@
 
         <!-- JS Linking -->
         <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/community_landing.js"></script>
 
         <title>Work Phase 4</title>
 
@@ -66,27 +68,27 @@
 
         <div class="container">
             <!-- Breadcrumb -->
-            <nav class="breadcrumb">
-                <a href="#">Communities & Networks</a>
-                <span>></span>
-                <span>Community 1</span>
+            <nav aria-label="Breadcrumb" class="m-t-3">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>></li>
+                    <li><a href="style_guide.html">Communities & Networks</a></li>
+                    <li>></li>
+                    <li><a href="behavioral_design.html" aria-current="page">International Student Community</a></li>
+                </ol>
             </nav>
 
             <!-- Hero Section -->
             <section class="hero">
-                <h1>Community Name</h1>
+                <h1>International Student Association</h1>
                 <p>Meet our community</p>
-                <button class="follow-btn">Follow</button>
+                <button class="btn">Follow</button>
             </section>
 
             <!-- Banner Image -->
-            <div class="banner"></div>
-
-            <!-- WhatsApp CTA -->
-            <section class="whatsapp-cta">
-                <h2>Join our community WhatsApp group!</h2>
-                <button class="join-btn">Join!</button>
-            </section>
+            <div class="banner">
+                <img src="assets/images/banner.jpg" alt="community-banner">
+            </div>
 
             <!-- Filter -->
             <div class="filter-section">
@@ -100,58 +102,24 @@
 
             <!-- Posts Feed -->
             <div class="posts-feed">
-                <!-- Post 1 -->
-                <article class="post-card">
-                    <div class="post-header">
-                        <div class="post-author">
-                            <div class="avatar">👤</div>
-                            <div class="author-info">
-                                <h3>Name</h3>
-                                <p>Community</p>
+                <div class="community-card">
+                    <div class="card-header">
+                        <div class="avatar-identity">
+                            <img class="avatar" src="assets/images/account.png" alt="Avatar"></img>
+                            <div class="avatar-name">
+                                <label>Syafira Nurilhaq</label>
+                                <p><small>International Student Association</small>
                             </div>
                         </div>
-                        <span class="post-date">Date published</span>
+                        <div class="tags">
+                            <span>5 January 2025</span>
+                        </div>
                     </div>
-                    <div class="post-content">
-                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups
-                    </div>
-                    <div class="post-actions">
-                        <button class="action-btn">
-                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                            100
-                        </button>
-                        <button class="action-btn">
-                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                            </svg>
-                            100
-                        </button>
-                        <button class="action-btn">
-                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                            </svg>
-                            100
-                        </button>
-                    </div>
-                </article>
+                    
+                    <p class="card-text">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
 
-                <!-- Post 2 -->
-                <article class="post-card">
-                    <div class="post-header">
-                        <div class="post-author">
-                            <div class="avatar">👤</div>
-                            <div class="author-info">
-                                <h3>Name</h3>
-                                <p>Community</p>
-                            </div>
-                        </div>
-                        <span class="post-date">Date published</span>
-                    </div>
-                    <div class="post-content">
-                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups
-                    </div>
                     <div class="post-actions">
                         <button class="action-btn">
                             <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,8 +140,122 @@
                             100
                         </button>
                     </div>
-                </article>
+                </div>
+
+                <div class="community-card">
+                    <div class="card-header">
+                        <div class="avatar-identity">
+                            <img class="avatar" src="assets/images/account.png" alt="Avatar"></img>
+                            <div class="avatar-name">
+                                <label>Syafira Nurilhaq</label>
+                                <p><small>International Student Association</small>
+                            </div>
+                        </div>
+                        <div class="tags">
+                            <span>5 January 2025</span>
+                        </div>
+                    </div>
+                    
+                    <p class="card-text">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
+
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            100
+                        </button>
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                            100
+                        </button>
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                            100
+                        </button>
+                    </div>
+                </div>
+
+                <div class="community-card">
+                    <div class="card-header">
+                        <div class="avatar-identity">
+                            <img class="avatar" src="assets/images/account.png" alt="Avatar"></img>
+                            <div class="avatar-name">
+                                <label>Syafira Nurilhaq</label>
+                                <p><small>International Student Association</small>
+                            </div>
+                        </div>
+                        <div class="tags">
+                            <span>5 January 2025</span>
+                        </div>
+                    </div>
+                    
+                    <p class="card-text">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
+
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            100
+                        </button>
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                            100
+                        </button>
+                        <button class="action-btn">
+                            <svg class="action-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                            100
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <section class="join-cta">
+                <h2>Join our community!</h2>
+                <!-- Form -->
+                <form id="community-form" enctype="multipart/form-data" method="POST">
+                    <!-- Full Name -->
+                    <label for="name">Full Name (required)</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+                    
+                    <!-- Email -->
+                    <label for="email">Email (required)</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Enter a valid email"><br><br>
+
+                    <!-- Message -->
+                    <label for="message">Message (optional)</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message..."></textarea><br><br>
+                    
+                    <!-- Photo -->
+                    <label for="photo">Photo (optional)</label><br>
+                    <input type="file" id="photo" name="photo" accept="image/*"><br>
+                    <small>Max size: 10MB</small><br><br>
+
+                    <!-- Submit -->
+                    <button type="submit">Submit</button>
+                </form>
+
+                <!-- Feedback -->
+                <p id="form-feedback"></p>
+
+                <section>
+                    <div id="community-list">
+                    </div>
+                </section>
+            </section>
 
         </div>
         

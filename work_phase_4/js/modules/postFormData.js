@@ -1,27 +1,26 @@
-export const postFormData = async (formEl, endpointUrl, customHeaders = {}) => {
+export async function postFormData(form, url, extraHeaders = {}) {
+    const formData = new FormData(form);
+    
     try {
-        const formData = new FormData(formEl);
-
-        const response = await fetch(endpointUrl, {
-        method: 'POST',
-        headers: {
-            ...customHeaders
-            // Don't set 'Content-Type' manually when using FormData
-        },
-        body: formData
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                ...extraHeaders,
+            },
+            body: formData,
         });
 
-        const data = await response.json();
+    const data = await response.json();
 
-        return {
-        success: response.ok && data.status === 'success',
+    return {
+        success: response.ok,
         data,
-        };
-    } catch (error) {
-        console.error('Error submitting form:', error);
-        return {
+    };
+} catch (err) {
+    console.error("Error submitting form:", err);
+    return {
         success: false,
-        error: error.message,
-        };
-    }
-};
+        data: { message: "Network or server error." },
+    };
+}
+}

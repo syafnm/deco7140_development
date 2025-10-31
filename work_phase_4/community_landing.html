@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/work_phase_4/css/base.css" />
         <link rel="stylesheet" href="/work_phase_4/css/components.css" />
         <link rel="stylesheet" href="/work_phase_4/css/component_skeletons/card.css" />
+        <link rel="stylesheet" href="/work_phase_4/css/component_skeletons/form.css" />
         <link rel="stylesheet" href="/work_phase_4/css/layout.css" />
         <link rel="stylesheet" href="/work_phase_4/css/page_css/community_landing.css" />
 
@@ -31,50 +32,76 @@
 
     </head>
     <body>
-        <header class="nav-container">
-            <section class="nav-container-nested">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="company-logo">
-                </div>
+        <header>
+            <section class="nav-container">
+                <section class="nav-container-nested">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="company-logo" />
+                    </div>
 
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <button>🔍</button>
-                </div>
-            </section>
-            
-            <section>
-                <nav id="nav-desktop">
-                    <ul class="nav-container-nested">
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="articles.html" aria-current="page">Articles</a></li>
-                        <li><a href="communities_network.html" >Communities & Networks</a></li>
-                    </ul>
-                </nav>
-            </section>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." />
+                        <button>🔍</button>
+                    </div>
+                </section>
 
-            <section class="auth-buttons">
-                <button class="login">LOG IN</button>
+                <section>
+                    <nav id="nav-desktop">
+                        <ul class="nav-container-nested">
+                            <li>
+                                <a href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li><a href="articles.html" aria-current="page"
+                                >Articles</a></li>
+                            <li>
+                                <a href="communities_network.html"
+                                    >Communities & Networks</a
+                                >
+                            </li>
+                            <li>
+                                <a href="implementation_rationale.html">IR</a>
+                            </li>
+                            <li>
+                                <a href="genai_mt_acknowledgement.html"
+                                    >GenAI/MT</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="auth-buttons">
+                    <button class="login">LOG IN</button>
+                </section>
             </section>
 
             <nav id="nav-mobile" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="index.html" aria-current="page"><span class="icon">🏠</span></a></li>
-                    <li><a href="articles.html"><span class="icon">📰</span></a></li>
-                    <li><a href="communities_network.html"><span class="icon">🪢</span></a></li>
+                    <li>
+                        <a href="index.html" aria-current="page"
+                            ><span class="icon">🏠</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="articles.html"><span class="icon">📰</span></a>
+                    </li>
+                    <li>
+                        <a href="communities_network.html"
+                            ><span class="icon">🪢</span></a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <div class="container">
             <!-- Breadcrumb -->
-            <nav aria-label="Breadcrumb" class="m-t-3">
+            <nav aria-label="Breadcrumb" class="m-t-4; p-t-4">
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li>></li>
-                    <li><a href="style_guide.html">Communities & Networks</a></li>
-                    <li>></li>
-                    <li><a href="behavioral_design.html" aria-current="page">International Student Community</a></li>
+                    <li><a href="communities_network.html">Communities & Networks</a></li>
+                    <li><a href="community_landing.html" aria-current="page">International Student Association</a></li>
                 </ol>
             </nav>
 
@@ -90,18 +117,18 @@
                 <img src="assets/images/banner.jpg" alt="community-banner">
             </div>
 
-            <!-- Filter -->
-            <div class="filter-section">
-                <select class="filter-dropdown">
-                    <option>Filter by date</option>
-                    <option>Most recent</option>
-                    <option>Most popular</option>
-                    <option>Oldest first</option>
-                </select>
-            </div>
-
             <!-- Posts Feed -->
-            <div class="posts-feed">
+            <div class="community-list">
+                <!-- Filter -->
+                <div class="filter-section">
+                    <select class="filter-dropdown">
+                        <option>Filter by date</option>
+                        <option>Most recent</option>
+                        <option>Most popular</option>
+                        <option>Oldest first</option>
+                    </select>
+                </div>
+
                 <div class="community-card">
                     <div class="card-header">
                         <div class="avatar-identity">
@@ -223,26 +250,34 @@
                 </div>
             </div>
 
-            <section class="join-cta">
-                <h2>Join our community!</h2>
+            <section class="join-container">
+                <h2 class="m-y-2">Join our community!</h2>
                 <!-- Form -->
                 <form id="community-form" enctype="multipart/form-data" method="POST">
                     <!-- Full Name -->
-                    <label for="name">Full Name (required)</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+                    <div class="form-group">
+                        <label for="name">Full Name (required)</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+                    </div>
                     
                     <!-- Email -->
-                    <label for="email">Email (required)</label><br>
-                    <input type="email" id="email" name="email" required placeholder="Enter a valid email"><br><br>
-
+                    <div class="form-group">
+                        <label for="email">Email (required)</label><br>
+                        <input type="email" id="email" name="email" required placeholder="Enter a valid email"><br><br>
+                    </div>
+                    
                     <!-- Message -->
-                    <label for="message">Message (optional)</label><br>
-                    <textarea id="message" name="message" rows="4" placeholder="Write your message..."></textarea><br><br>
+                    <div class="form-group">
+                        <label for="message">Message (optional)</label><br>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message..."></textarea><br><br>
+                    </div>
                     
                     <!-- Photo -->
-                    <label for="photo">Photo (optional)</label><br>
-                    <input type="file" id="photo" name="photo" accept="image/*"><br>
-                    <small>Max size: 10MB</small><br><br>
+                    <div class="form-group">
+                        <label for="photo">Photo (optional)</label><br>
+                        <input type="file" id="photo" name="photo" accept="image/*"><br>
+                        <small>Max size: 10MB</small><br><br>
+                    </div>
 
                     <!-- Submit -->
                     <button type="submit">Submit</button>

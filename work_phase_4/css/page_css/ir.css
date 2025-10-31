@@ -1,0 +1,17 @@
+.content-section{
+    max-width: 900px; /* Sesuaikan lebar konten */
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left; /* Ini yang membuat teks rata kiri */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-card {
+    width: 100%;
+    background-color: var(--light-primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 12px;
+}

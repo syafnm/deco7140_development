@@ -97,6 +97,7 @@ p small {
 
     .m-t-1 { margin-top: var(--space-1); }
     .m-t-3 { margin-top: var(--space-3); }
+    .m-t-4 { margin-top: var(--space-4); }
     .m-b-1 { margin-bottom: var(--space-1); }
     .m-b-3 { margin-bottom: var(--space-3); }
     .m-s-1 { margin-inline-start: var(--space-1); }
@@ -114,6 +115,7 @@ p small {
     .p-4 { padding: var(--space-4); }
 
     .p-t-1 { padding-top: var(--space-1); }
+    .p-t-4 { padding-top: var(--space-4); }
     .p-b-1 { padding-bottom: var(--space-1); }
     .p-s-1 { padding-inline-start: var(--space-1); }
     .p-e-1 { padding-inline-end: var(--space-1); }

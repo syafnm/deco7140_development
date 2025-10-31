@@ -10,22 +10,26 @@
 
 .nav-container {
     display: flex;
+    flex-direction: row;
     top: 0;
     position: fixed;
     width: 100vw;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
     gap: 24px;
+    align-items: center;
     background-color: var(--primary-color);
+    z-index: 10;
 }
 
 .nav-container-nested {
     display: flex;
-    gap: 24px;
+    flex-direction: row;
+    gap: 12px;
     align-items: center;
+    margin-left: 0;
     background-color:var(--primary-color);
 }
 
@@ -37,6 +41,13 @@
         margin: 0 auto;
         background-color: var(--background-color);
     }  
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .nav-container {
+    display: none;
+    }
 }
 
 /* Footer */

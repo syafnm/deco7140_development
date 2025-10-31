@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/work_phase_4/css/base.css" />
         <link rel="stylesheet" href="/work_phase_4/css/components.css" />
         <link rel="stylesheet" href="/work_phase_4/css/layout.css" />
+        <link rel="stylesheet" href="/work_phase_4/css/page_css/ir.css">
 
         <!--Font Linking-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,56 +25,128 @@
 
     </head>
     <body>
-        <header class="nav-container">
-            <section class="nav-container-nested">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="company-logo">
-                </div>
+        <header>
+            <section class="nav-container">
+                <section class="nav-container-nested">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="company-logo" />
+                    </div>
 
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <button>🔍</button>
-                </div>
-            </section>
-            
-            <section>
-                <nav id="nav-desktop">
-                    <ul class="nav-container-nested">
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="articles.html" aria-current="page">Articles</a></li>
-                        <li><a href="communities_network.html" >Communities & Networks</a></li>
-                    </ul>
-                </nav>
-            </section>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." />
+                        <button>🔍</button>
+                    </div>
+                </section>
 
-            <section class="auth-buttons">
-                <button class="login">LOG IN</button>
+                <section>
+                    <nav id="nav-desktop">
+                        <ul class="nav-container-nested">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html">Articles</a></li>
+                            <li>
+                                <a href="communities_network.html"
+                                    >Communities & Networks</a
+                                >
+                            </li>
+                            <li>
+                                <a href="implementation_rationale.html" aria-current="page"
+                                >IR</a>
+                            </li>
+                            <li>
+                                <a href="genai_mt_acknowledgement.html"
+                                    >GenAI/MT</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="auth-buttons">
+                    <button class="login">LOG IN</button>
+                </section>
             </section>
 
             <nav id="nav-mobile" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="index.html" aria-current="page"><span class="icon">🏠</span></a></li>
-                    <li><a href="articles.html"><span class="icon">📰</span></a></li>
-                    <li><a href="communities_network.html"><span class="icon">🪢</span></a></li>
+                    <li>
+                        <a href="index.html" aria-current="page"
+                            ><span class="icon">🏠</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="articles.html"><span class="icon">📰</span></a>
+                    </li>
+                    <li>
+                        <a href="communities_network.html"
+                            ><span class="icon">🪢</span></a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <div class="container">
-            <h1 class="m-y-4">Welcome to UNIVERSE!</h1>
-            <h3 class="m-y-2">Welcome to your trusted space for international student life and connection.</h3>
-            <p class="m-y-2">
-                Whether you're preparing for your studies abroad or currently navigating life in a new country, 
-                this platform is here to support you at every stage of your academic journey. You’ll find 
-                reliable resources from universities, immigration offices, and student support services, 
-                along with real stories and advice from fellow international students around the world. 
-                Our interactive threads offer a respectful space to ask questions, share experiences, and 
-                build meaningful connections. We believe that students who are well-informed can make empowered 
-                decisions — and that learning from others’ experiences can make the journey more inclusive 
-                and enriching. Start exploring articles, join discussions, or connect with others who’ve walked 
-                a similar path. If you're new here, check out our guides to visas, housing, and cultural adaptation. 
-                Let’s make your international journey smoother, together.
-            </p>
+        <div class="p-t-4; container">
+            <div class="p-t-4"></div>
+            <h1 class="p-t-4">Implementation Rationale</h1>
+
+            <section class="content-section">
+                <h3>Alignment with Client and User Needs</h3>
+                <p class="m-y-2">
+                    My website is designed with international students in mind, aiming to address 
+                    their key needs as outlined in the user stories. To ensure accurate and updated 
+                    information, each article includes its source and publication date, helping 
+                    users trust the content and stay informed with the latest developments.
+                </p>
+                <p class="m-y-2">
+                    To support interactive conversation, the website features a thread-like message 
+                    board where users can ask questions, share insights, and engage with the community. 
+                    While features like commenting, liking, and sharing are not yet available, 
+                    they are part of the future roadmap to enhance interactivity and real-time engagement.
+                </p>
+                <p class="m-y-2">
+                    Through the message board, users also gain access to real student experiences, as 
+                    discussions often include personal stories, tips, and testimonials from fellow 
+                    international students. This creates a more authentic and relatable environment.
+                </p>
+                <p class="m-y-2">
+                    Although the website is still a work in progress, I’ve made efforts to ensure 
+                    it is easy to use on mobile, allowing users to navigate quickly and with minimal effort, 
+                    even on smaller screens. <br><br>
+                </p>
+                <div class="content-card">
+                        My website aligns with the goals of the Connect Communities Initiative (CCI) 
+                        by supporting both community building and practitioner engagement through its features:
+                        <ul>
+                            <li>• Building Community Connections <br>
+                                Through the Communities and Networks page, users can explore and connect 
+                                with various student groups and support networks.
+                            </li>
+                            <li>• Supporting Practitioners <br>
+                                    Articles may include events and information about potential activities 
+                                    and opportunities, helping practitioners stay informed and engaged.
+                            </li>
+                        </ul>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Accessibility and Ethical Considerations</h3>
+            </section>
+
+            <section class="content-section">
+                <h3>Variations from A3 Design Proposal</h3>
+            </section>
+
+            <section class="content-section">
+                <h3>Challenges and Strategies</h3>
+            </section>
+
+            <section class="content-section">
+                <h3>Accessibility Audit</h3>
+            </section>
+
+            <section class="content-section">
+                <h3>Github Repository</h3>
+            </section>
         </div>
         
         <footer class="footer">

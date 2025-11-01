@@ -160,11 +160,18 @@
     height: 150px;
     background-color: #eee;
     margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .tags span {
     display: inline-block;
-    background-color: var(--light-text-color);
     padding: 4px 8px;
     margin-right: 5px;
     font-size: 0.8rem;
@@ -316,3 +323,16 @@
     color: #333;
     pointer-events: none;
 }
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
